@@ -8,7 +8,7 @@ that are specific to depressed patients.
 [source](http://www.aaai.org/Papers/ICWSM/2008/ICWSM08-020.pdf)
 
 
-###Motivation:
+### Motivation:
 
 It is claimed that around 50-70% of people who commit suicide suffer from
 clinical depression.  ([source](https://books.google.de/books?id=nD6VAFvKGC0C&pg=PA453&redir_esc=y#v=onepage&q&f=false))
@@ -23,12 +23,12 @@ problems. Given the respective reasons, it can be assumed that there is plenty o
 available data (texts produced by depressed people) to be able to analyze 
 it and use it for machine learning purposes. 
 
-###Idea
+### Idea
 The idea is to gather data from various forums devoted to depression, and train a 
 a neural network that would then be able to identify texts produced by people 
 affected by clinical depression. 
 
-###Method
+### Method
 I plan to train an RRN for this particular task. 
 
 As a side project, I will attempt to use an unsupervised approach (a clustering method) 
