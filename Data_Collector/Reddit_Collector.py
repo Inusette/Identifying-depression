@@ -47,6 +47,38 @@ for post in j_data:
 
     # create a file with the post's author's nickname
     filename = './reddit_data/' + author + '.txt'
+    # extract the author, the title and the text of the post
+    title = post['data']['title']
+    author = post['data']['author']
+    text = post['data']['selftext']
+
+    # create a file with the post's author's nickname
+    filename = './reddit_data/' + author + '.txt'
+
+    # open the file to write
+    post_file = open(filename, 'w')
+
+    # write the title on the first line and then the post itself
+    post_file.write(title.encode('utf-8') + '\n' + text.encode('utf-8'))
+
+    # close the file
+    post_file.close()    # extract the author, the title and the text of the post
+    title = post['data']['title']
+    author = post['data']['author']
+    text = post['data']['selftext']
+
+    # create a file with the post's author's nickname
+    filename = './reddit_data/' + author + '.txt'
+
+    # open the file to write
+    post_file = open(filename, 'w')
+
+    # write the title on the first line and then the post itself
+    post_file.write(title.encode('utf-8') + '\n' + text.encode('utf-8'))
+
+    # close the file
+    post_file.close()
+
 
     # open the file to write
     post_file = open(filename, 'w')
