@@ -32,7 +32,7 @@ affected by clinical depression.
 Some of the trustworthy data is already available: the data from English depression forums 
 was collected by Pennebaker et al.(2008). However, that dataset only contains about 400 
 blog posts, which might not be enough for machine learning purposes. Therefore, I'm still looking for other
-sources - so far, I'm collecting posts from the subreddit (Reddit is a social news aggregation, 
+sources - so far, I'm collecting posts from the subreddsubredditit (Reddit is a social news aggregation, 
 web content rating, and discussion website) devoted to depression. Reddit data might not be as 
 reliable, because often people there self-diagnose themselves, but most of the posts still
 convey a strong negative emotion. 

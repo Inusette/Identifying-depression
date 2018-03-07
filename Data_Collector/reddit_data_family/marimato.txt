@@ -1,0 +1,10 @@
+I'd like your input on an idea for a project that I'd like to develop
+I am looking to see what you guys think about a project I'm working on. Actuality is the name of the idea - we provide a toolkit (aka, board game) with questions that you'll ask a family member. The intention is for you to uncover the most significant memories you can from your loved ones. With a the use of a few techniques of design research (ethnographic and co-creative methodologies), the game lets you uncover an record your loved ones' answers. After you have completed the game (which doesn't need to be completed right away, you will keep track of the "findings" on an App that the user will have access to) - and when you're done, the team at Actuality will send you a memento with these recollection of stories.  
+
+Please check it out here: http://tellmeastory-test.webflow.io/
+
+I'm validating the idea, so please feel free to give me your most honest opinion about an idea like this. Would you use it? If not, what else would you like to see here? The concept isn't 100% defined, so there's definitely room for refinement and iteration.
+
+Also, feel free to subscribe if you're interested on learning more! :) 
+
+Thank you in advance.

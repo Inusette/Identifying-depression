@@ -21,6 +21,9 @@ PENALTY = "l1"
 DEP = "./reddit_data"
 FAM = "./reddit_data_family"
 
+# number of files to use for classification
+NUM_FILES = 400
+
 
 def process_post(file_path):
 
@@ -130,8 +133,8 @@ def lr_classify(x_train, x_test, y_train, y_test):
 data = Bunch()
 
 # lists of file names in both directories
-dep_fnames = np.array(os.listdir(DEP)[:130])
-fam_fnames = np.array(os.listdir(FAM)[:130])
+dep_fnames = np.array(os.listdir(DEP)[:NUM_FILES])
+fam_fnames = np.array(os.listdir(FAM)[:NUM_FILES])
 
 # join the 2 arrays of file names
 file_names = np.concatenate((dep_fnames, fam_fnames))
