@@ -1,14 +1,16 @@
 import os
 import re
-from nltk.tokenize import word_tokenize
 import numpy as np
 import random
 from bunch import Bunch
+
+from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import roc_auc_score
 from sklearn.feature_extraction.text import TfidfVectorizer
+
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import roc_auc_score
+from sklearn.model_selection import StratifiedKFold
 
 
 # test size proportions
@@ -23,6 +25,9 @@ FAM = "./reddit_data_family"
 
 # number of files to use for classification
 NUM_FILES = 400
+
+# number of K-fold splits
+KFOLD_SPLITS = 10
 
 
 def process_post(file_path):
@@ -85,7 +90,7 @@ def make_count_vectors(raw_data):
     # transform the data into vectors
     x_counts = vectorizer.fit_transform(raw_data)
 
-    print("Count vectors shape: ", x_counts.shape)
+    print "Count vectors shape: ", x_counts.shape
 
     return x_counts
 
@@ -102,38 +107,81 @@ def make_tfidf_vectors(raw_data):
     # transform the data into vectors
     x_tfidf = vectorizer.fit_transform(raw_data)
 
-    print("Tf-idf vectors shape: ", x_tfidf.shape)
+    print "Tf-idf vectors shape: ", x_tfidf.shape
 
     return x_tfidf
 
 
-def lr_classify(x_train, x_test, y_train, y_test):
+def fit_lr_model(x_train, y_train):
+    """
+    Creates a logistic regression model and fits the given data to it
+    :param x_train: train set to fir to model
+    :param y_train: train label set to fit to model
+    :return: the model
+    """
 
     # define the logistic regression classifier model
-    lr_clf = LogisticRegression(penalty=PENALTY)
+    lr_clf = LogisticRegression(penalty=PENALTY, class_weight='balanced')
 
     # fit the data to the model
     lr_clf.fit(x_train, y_train)
 
-    # calculate the cross validation
-    cross_val = lr_clf.score(x_test, y_test)
+    return lr_clf
 
-    # calculate the roc score
-    y_pred_lr = lr_clf.predict_proba(x_test)[:, 1]
-    roc = roc_auc_score(y_test, y_pred_lr)
 
-    return cross_val, roc
+def get_class_accuracy(x, y):
+    """
+    Splits the data into K stratified folds and calculates the accuracy means of a logistic regression classifier
+    :param x: vector data to split into train/test sets
+    :param y: target labels of the data
+    :return: mean cross validation accuracy and roc accuracy
+    """
+
+    # Create the stratified fold splits model
+    skf = StratifiedKFold(n_splits=KFOLD_SPLITS, shuffle=True)
+
+    # create the accuracy means
+    val_cv_mean = []
+    val_roc_mean = []
+
+    # iterate all the indices the split() method returns
+    for indx, (train_indices, test_indices) in enumerate(skf.split(x, y)):
+        # print the running fold
+        print "Training on fold " + str(indx + 1) + "/10..."
+
+        # Generate batches from indices
+        x_train, x_test = x[train_indices], x[test_indices]
+        y_train, y_test = y[train_indices], y[test_indices]
+
+        # fit the data to the logistic regression model
+        lr_model = fit_lr_model(x_train, y_train)
+
+        # calculate the cross validation
+        cross_val = lr_model.score(x_test, y_test)
+
+        # calculate the roc score
+        y_pred_lr = lr_model.predict_proba(x_test)[:, 1]
+        roc = roc_auc_score(y_test, y_pred_lr)
+
+        # append both values to the mean validation lists
+        val_cv_mean.append(cross_val)
+        val_roc_mean.append(roc)
+
+    # return both accuracy means
+    return np.mean(val_cv_mean), np.mean(val_roc_mean)
 
 
 # -------------------------------------------------------------------------------
 # Process the data
 # -------------------------------------------------------------------------------
 
+print "\nProcessing data"
+
 # instantiate the data bunch
 data = Bunch()
 
 # lists of file names in both directories
-dep_fnames = np.array(os.listdir(DEP)[:NUM_FILES])
+dep_fnames = np.array(os.listdir(DEP)[:800])
 fam_fnames = np.array(os.listdir(FAM)[:NUM_FILES])
 
 # join the 2 arrays of file names
@@ -150,8 +198,7 @@ data.filepath = []  # path to files
 data.data = []  # raw texts
 data.target = []  # target category index
 
-print("10 first file names ", file_names[:10])
-print("len filenames ", len(file_names))
+print "len filenames ", len(file_names)
 
 # iterate the file names
 for index in range(len(file_names)):
@@ -181,57 +228,48 @@ for index in range(len(file_names)):
     data.data.append(post_text)
 
 
-print("data length ", len(data.data))
-print("target 10", data.target[:10])
-print("target length", len(data.target))
-print(data.data[:3])
+print "data length ", len(data.data)
+print "target 10", data.target[:10]
+print "target length", len(data.target)
+print data.data[:2]
 
 
 # -------------------------------------------------------------------------------
-# Count vectors
+# Vectors
 # -------------------------------------------------------------------------------
+
+print "\ncreating data vectors"
+
+print("\ncount vectors: \n")
+
+# create the target labels array
+labels = np.array(data.target)
+
+# --------------------------------------------
+# Frequency count vectors
+# --------------------------------------------
 
 # transform raw data into count vectors
 X_counts = make_count_vectors(data.data)
 
-# split vectors into train and test sets
-X_count_train, X_count_test, y_count_train, y_count_test = train_test_split(
-    X_counts, np.array(data.target), test_size=TEST_SIZE, random_state=0)
+# fit the data to the model and get the accuracy scores
+count_cross_val, count_roc_auc = get_class_accuracy(X_counts, labels)
 
-print("Count vectors: train and test: ", X_count_train.shape, y_count_train.shape)
+print "\ncross validation: ", count_cross_val
+print "roc: ", count_roc_auc
 
 
-# -------------------------------------------------------------------------------
+# ---------------------------------------------
 # Tf-idf vectors
-# -------------------------------------------------------------------------------
+# ---------------------------------------------
+
+print("\nTf-idf vectors: \n")
 
 # transform raw data into tf-idf vectors
 X_tfidf = make_tfidf_vectors(data.data)
 
-# split vectors into train and test sets
-X_tfidf_train, X_tfidf_test, y_tfidf_train, y_tfidf_test = train_test_split(
-    X_tfidf, np.array(data.target), test_size=TEST_SIZE, random_state=0)
-
-print("tfidf vectors: train and test: ", X_tfidf_train.shape, y_tfidf_train.shape)
-
-
-# -------------------------------------------------------------------------------
-# Model
-# -------------------------------------------------------------------------------
-
 # fit the data to the model and get the accuracy scores
+tfidf_cross_val, tfidf_roc_auc = get_class_accuracy(X_tfidf, labels)
 
-# for the count vectors:
-count_cross_val, count_roc_auc = lr_classify(X_count_train, X_count_test, y_count_train, y_count_test)
-
-print("\ncount vectors: \n")
-print("cross validation: ", count_cross_val)
-print("roc: ", count_roc_auc)
-
-
-# for the tf-idf vectors
-tfidf_cross_val, tfidf_roc_auc = lr_classify(X_tfidf_train, X_tfidf_test, y_tfidf_train, y_tfidf_test)
-
-print("\nTf-idf vectors: \n")
-print("cross validation: ", tfidf_cross_val)
-print("roc: ", tfidf_roc_auc)
+print "\ncross validation: ", tfidf_cross_val
+print "roc: ", tfidf_roc_auc
