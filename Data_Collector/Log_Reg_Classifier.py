@@ -11,10 +11,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import roc_auc_score
 from sklearn.model_selection import StratifiedKFold
+from sklearn.metrics import precision_recall_fscore_support as prf_evaluator
 
-
-# test size proportions
-TEST_SIZE = 0.4
 
 # Logistic Regression penalty
 PENALTY = "l1"
@@ -28,6 +26,9 @@ NUM_FILES = 400
 
 # number of K-fold splits
 KFOLD_SPLITS = 10
+
+# the average parameter for the precision/recall evaluator
+EVAL_AVERAGE = 'binary'
 
 
 def process_post(file_path):
@@ -67,10 +68,10 @@ def process_sent(sentence):
     sentence = sentence.decode("utf8")
 
     # remove case
-    sentence = sentence.lower()
+    #sentence = sentence.lower()
 
     # remove digits
-    sentence = re.sub('\d', '', sentence)
+    #sentence = re.sub('\d', '', sentence)
 
     # tokenize
     tokens = word_tokenize(sentence)
@@ -112,7 +113,7 @@ def make_tfidf_vectors(raw_data):
     return x_tfidf
 
 
-def fit_lr_model(x_train, y_train):
+def train_lr_model(x_train, y_train):
     """
     Creates a logistic regression model and fits the given data to it
     :param x_train: train set to fir to model
@@ -129,7 +130,33 @@ def fit_lr_model(x_train, y_train):
     return lr_clf
 
 
-def get_class_accuracy(x, y):
+def evaluate(model, x_test, y_test):
+    """
+    Calculates 2 types of accuracies, precision, recall, f-score and support for the given fold
+    :param model: trained model
+    :param x_test: test set
+    :param y_test: test label set
+    :return: bunch with evaluation scores as attributes
+    """
+
+    # create the evaluation bunch for the given fold
+    ev = Bunch()
+
+    # calculate the cross validation
+    ev.cross_val = model.score(x_test, y_test)
+
+    # calculate the roc score
+    y_pred_lr = model.predict_proba(x_test)[:, 1]
+    ev.roc = roc_auc_score(y_test, y_pred_lr)
+
+    # get the precision, recall, f-score
+    ev.precision, ev.recall, ev.fscore, ev.supp = \
+        prf_evaluator(y_test, model.predict(x_test), average=EVAL_AVERAGE)
+
+    return ev
+
+
+def classify(x, y):
     """
     Splits the data into K stratified folds and calculates the accuracy means of a logistic regression classifier
     :param x: vector data to split into train/test sets
@@ -140,9 +167,14 @@ def get_class_accuracy(x, y):
     # Create the stratified fold splits model
     skf = StratifiedKFold(n_splits=KFOLD_SPLITS, shuffle=True)
 
-    # create the accuracy means
-    val_cv_mean = []
-    val_roc_mean = []
+    # create the evaluation bunch and its attributes
+    evaluation = Bunch()
+    evaluation.precision = []
+    evaluation.recall = []
+    evaluation.fscore = []
+
+    cv_mean = []
+    roc_mean = []
 
     # iterate all the indices the split() method returns
     for indx, (train_indices, test_indices) in enumerate(skf.split(x, y)):
@@ -154,21 +186,25 @@ def get_class_accuracy(x, y):
         y_train, y_test = y[train_indices], y[test_indices]
 
         # fit the data to the logistic regression model
-        lr_model = fit_lr_model(x_train, y_train)
+        lr_model = train_lr_model(x_train, y_train)
 
-        # calculate the cross validation
-        cross_val = lr_model.score(x_test, y_test)
+        # evaluate the model
+        fold_ev = evaluate(lr_model, x_test, y_test)
 
-        # calculate the roc score
-        y_pred_lr = lr_model.predict_proba(x_test)[:, 1]
-        roc = roc_auc_score(y_test, y_pred_lr)
+        # append all evaluation values to the mean lists and evaluation bunch
+        cv_mean.append(fold_ev.cross_val)
+        roc_mean.append(fold_ev.roc)
 
-        # append both values to the mean validation lists
-        val_cv_mean.append(cross_val)
-        val_roc_mean.append(roc)
+        evaluation.precision.append(fold_ev.precision)
+        evaluation.recall.append(fold_ev.recall)
+        evaluation.fscore.append(fold_ev.fscore)
 
-    # return both accuracy means
-    return np.mean(val_cv_mean), np.mean(val_roc_mean)
+    # calculate the mean for both accuracies and add to the evaluation
+    evaluation.cv = np.mean(cv_mean)
+    evaluation.roc = np.mean(roc_mean)
+
+    # return the evaluation bunch
+    return evaluation
 
 
 # -------------------------------------------------------------------------------
@@ -235,7 +271,7 @@ print data.data[:2]
 
 
 # -------------------------------------------------------------------------------
-# Vectors
+# Vectors and Model
 # -------------------------------------------------------------------------------
 
 print "\ncreating data vectors"
@@ -253,10 +289,13 @@ labels = np.array(data.target)
 X_counts = make_count_vectors(data.data)
 
 # fit the data to the model and get the accuracy scores
-count_cross_val, count_roc_auc = get_class_accuracy(X_counts, labels)
+count_eval = classify(X_counts, labels)
 
-print "\ncross validation: ", count_cross_val
-print "roc: ", count_roc_auc
+print "\ncross validation: ", count_eval.cv
+print "roc: ", count_eval.roc
+print "precision for the first 10: ", count_eval.precision[:10]
+print "recall for the first 10: ", count_eval.recall[:10]
+print "fscore for the first 10: ", count_eval.fscore[:10]
 
 
 # ---------------------------------------------
@@ -269,7 +308,10 @@ print("\nTf-idf vectors: \n")
 X_tfidf = make_tfidf_vectors(data.data)
 
 # fit the data to the model and get the accuracy scores
-tfidf_cross_val, tfidf_roc_auc = get_class_accuracy(X_tfidf, labels)
+tfidf_eval = classify(X_tfidf, labels)
 
-print "\ncross validation: ", tfidf_cross_val
-print "roc: ", tfidf_roc_auc
+print "\ncross validation: ", tfidf_eval.cv
+print "roc: ", tfidf_eval.roc
+print "precision for the first 10: ", tfidf_eval.precision[:10]
+print "recall for the first 10: ", tfidf_eval.recall[:10]
+print "fscore for the first 10: ", tfidf_eval.fscore[:10]
