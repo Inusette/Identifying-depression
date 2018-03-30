@@ -1,0 +1,14 @@
+I want to share a personal project I'm proud of
+A month ago I was feeling completely unmotivated to do anything. I was feeling that none of my connections with friends are as deep as they used to be, that I'm not as close to my family as I used to be, that nothing I do at work really matters, and that my health is slowly deteriorating. I just wanted to quit at everything.
+
+Then I was hanging out with a friend I hadn't seen in a while, and he admitted to me that he had been struggling with depression, so we both opened up about it. He ended up recommending the book "Feeling Good" to me, since it had helped him improve a lot. I read it and was initially a bit disappointed... some parts were underwhelming, some felt annoying/condescending, and the solution to every problem seemed to be the "three-column technique." But after trying a few of the exercises in the book, I admit it turned out to be somewhat helpful.
+
+One of the exercises/quizzes in the book is the "Depression Checklist," which (as I'm sure many of you are aware of) assesses your level of depression on a scale from 1 to 100. At the time, I was scoring in the "Moderate" range. After a couple weeks of applying some of the exercises, I was down to the "Mild" range. So I decided to create a project that might help me learn a bit more about myself, with regard to the effect of my daily habits on my level of depression.
+
+What I wanted to build was a simple web app that would let me score my productivity on a daily basis (based on exercising, reading, socializing, meditating, etc) and then plot that against my daily depression score. I wanted to see if there was a correlation between higher productivity and lower depression, or if certain activities had a greater impact on my mood.
+
+Ironically what I discovered was that working on the project itself was a huge mood-booster for me, since it gave me a sense of purpose and was a great outlet for creativity. As I've gotten further along in the work, I've noticed my depression level has slowly started rising again. But for a while, I was actually in the "Normal" range of depressive emotions! I couldn't believe it.
+
+Regardless, the project has also given me more insight into a few things that drastically help my mood. Even though my mood isn't at the level it was a couple weeks ago, it's nice to know that investing in personal projects gives me a lot of satisfaction :)
+
+(Also if anyone is interested in trying out the app, feel free to check it out [here](https://beok.herokuapp.com/). It's stupid simple and still a work in progress, but I'm still kinda proud of it... and if it were able to help even just one other person, that would make me pretty happy &lt;3)

@@ -9,7 +9,7 @@ def get_submissions(url):
     part of it as python object"""
 
     # script "identifier"
-    headers = {'User-Agent': 'depression'}
+    headers = {'User-Agent': 'blogs_depression'}
 
     # create new request here to open the url with above set headers
     req = urllib2.Request(url, None, headers)
@@ -47,7 +47,7 @@ for post in j_data:
     text = post['data']['selftext']
 
     # create a file with the post's author's nickname
-    filename = './reddit_data_family/' + author + '.txt'
+    filename = './reddit_non_depression/' + author + '.txt'
 
     # open the file to write
     post_file = open(filename, 'w')

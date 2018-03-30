@@ -14,15 +14,16 @@ from sklearn.model_selection import StratifiedKFold
 from sklearn.metrics import precision_recall_fscore_support as prf_evaluator
 
 
+# the path to the data directories
+# DEP = "./reddit_depression"
+# FAM = "./reddit_non_depression"
+# DEP = "./blogs_depression"
+# FAM = "./blogs_non_depression"
+DEP = "./mixed_depression"
+FAM = "./mixed_non_depression"
+
 # Logistic Regression penalty
 PENALTY = "l1"
-
-# the path to the data directories
-DEP = "./reddit_data"
-FAM = "./reddit_data_family"
-
-# number of files to use for classification
-NUM_FILES = 400
 
 # number of K-fold splits
 KFOLD_SPLITS = 10
@@ -65,7 +66,8 @@ def process_sent(sentence):
     :param sentence: the raw sentence
     :return: the list of sentence tokens
     """
-    sentence = sentence.decode("utf8")
+
+    sentence = sentence.decode('latin-1')
 
     # remove case
     #sentence = sentence.lower()
@@ -217,8 +219,11 @@ print "\nProcessing data"
 data = Bunch()
 
 # lists of file names in both directories
-dep_fnames = np.array(os.listdir(DEP)[:800])
-fam_fnames = np.array(os.listdir(FAM)[:NUM_FILES])
+dep_fnames = np.array(os.listdir(DEP))
+fam_fnames = np.array(os.listdir(FAM))
+
+print "number of depression files: ", len(dep_fnames)
+print "number of non-depression files: ", len(fam_fnames)
 
 # join the 2 arrays of file names
 file_names = np.concatenate((dep_fnames, fam_fnames))
