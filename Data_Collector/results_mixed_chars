@@ -1,0 +1,31 @@
+
+
+number of depression files:  1340
+number of non-depression files:  1482
+number of texts in data  2822
+targets for the first 10 files:  [0, 0, 1, 1, 0, 1, 0, 0, 1, 0]
+number of targets of files in data 2822
+[u'Can\xe2\x80\x99t get a job. My patient is about to die. I\xe2\x80\x99ll be out of a job. Can\xe2\x80\x99t seem to get any hospital to hire me as a CNA even though I\xe2\x80\x99m qualified. Had an interview cancelled on me. Can\xe2\x80\x99t vent to my boyfriend or my mom. They make me feel worse and argue with me because apparently I\xe2\x80\x99m just too negative and I\xe2\x80\x99m not allowed to be sad. The depression is getting bad again despite heading into spring and warm temps in Arizona. Can\xe2\x80\x99t keep doing this. The black clouds over me have been here my whole life. I\xe2\x80\x99m sick of it. Just want to end it all. Fuck this life. ', u"I am 17 and am going through some really hard times. My close friend died in a car accident last may, I am going through relationship problems, my body isn't fighting disease off very well, I am looking for where i belong in life / school, I was sexually abused by my boss and have a trial coming up the first of march, I have classes like physics and calculus to look forward to, my father and i haven't gotten along very well which is really hard because we were very close, my mother is pushing me very hard especially since i have interests in becoming a doctor, my job barely pays for my gas, my school told me i would be able to attend a seminar in Wisconsin and recently told me somebody else got to go instead, my friends are few and of lately not very true, and sadly that is the start of it ... i was hoping that i would be able to find somebody that could lend an ear since i have trouble finding anybody that cares much here.  i need a friend ... "]
+
+
+count vectors:
+
+Count vectors shape:  (2822, 2781)
+
+cross validation:  0.822108181001
+roc:  0.894410296052
+precision for the first 10:  [0.8378378378378378, 0.810126582278481, 0.8531468531468531, 0.831081081081081, 0.7947019867549668, 0.8424657534246576, 0.8169934640522876, 0.8661971830985915, 0.8251748251748252, 0.8367346938775511]
+recall for the first 10:  [0.8322147651006712, 0.8648648648648649, 0.8243243243243243, 0.831081081081081, 0.8108108108108109, 0.831081081081081, 0.8445945945945946, 0.831081081081081, 0.7972972972972973, 0.831081081081081]
+fscore for the first 10:  [0.8350168350168351, 0.8366013071895425, 0.8384879725085911, 0.8310810810810809, 0.802675585284281, 0.836734693877551, 0.8305647840531561, 0.8482758620689653, 0.8109965635738833, 0.8338983050847458]
+
+Tf-idf vectors:
+
+Tf-idf vectors shape:  (2822, 2781)
+
+cross validation:  0.787021776046
+roc:  0.864855585827
+precision for the first 10:  [0.823943661971831, 0.8079470198675497, 0.7972027972027972, 0.7945205479452054, 0.7615894039735099, 0.7898550724637681, 0.8333333333333334, 0.8, 0.7662337662337663, 0.8478260869565217]
+recall for the first 10:  [0.785234899328859, 0.8243243243243243, 0.7702702702702703, 0.7837837837837838, 0.777027027027027, 0.7364864864864865, 0.8445945945945946, 0.7837837837837838, 0.7972972972972973, 0.7905405405405406]
+fscore for the first 10:  [0.8041237113402062, 0.8160535117056857, 0.7835051546391752, 0.7891156462585033, 0.7692307692307693, 0.7622377622377623, 0.8389261744966443, 0.7918088737201365, 0.7814569536423841, 0.8181818181818182]
+
+

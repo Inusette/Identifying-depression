@@ -2,174 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee50e4cd-318a-4438-9447-e33066b4fae6" name="Default" comment="Added more depression data from reddit">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/inusea.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/-wowalker.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/1606938170.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/2021512l.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/365NewWaysToHug.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Abdetize.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Apachethenegus.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Arisola1998.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Blahblahblah20182017.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Boobietrap_throwaway.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Btenjamin.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/CalmInvestment.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/ChanelMozach.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/ChaolanLin.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/ChilliMcChill.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Creenburg.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/DaCyberEagle.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/DaniLee124.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Dirt_Runner.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/DzDeKuNuTz.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/E46M54.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/EducationalBeyond.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Foxy76574.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Gherico70.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Giwrgos_L.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Granstream.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Help_Me_Reddit01.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/ILikePizzaAndPie2002.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/IndependentSurround.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Jojo-ffm.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/KevinFuentes.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Killuminati523.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Kmar92.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Lachaca02.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/LesThePinapple.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Lifebythewindow.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Lo2109.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/London1406.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/LowRelative.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Monchomozli.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Naruakira21.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Notmyclubpenguin.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/NubianLotus.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Ocnarff.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/OkPlant.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Oneofthevindicators.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Oops1998.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/P3aches24.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Paperbaggo.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Paulypauly12.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/PizzaBlvd.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/ReyRoyWealth.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Sanchez2093.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Selahe1998.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/SensitiveBugGirl.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/SimmonsStudy.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/SophieWhitelaw.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Suca2801.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/SugarMa.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Taliskerbowmore.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/TheWindWaker12.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/TiyeQueenWriter.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Tom36456.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Trumpeachment.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/TypicalToe.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/UltraFly74.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Vonnae.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Westernboy93.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/WhiteFang4003.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/Woodscraps.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/XfapeedX.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/YsAtNaF996.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/[deleted].txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/__nopls__.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/_o3n3o_.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/absent_sire.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/adynamischesgefuege.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/ailicearyam.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/alday23.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/applejuice898989.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/arkhamCeety.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/artnos.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/ashkaka.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/bluediamondgal.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/bongthanthoai.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/carlykerfuffle.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/cccakes74.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/chakana0.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/crunchykittenroll.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/dadistwisted.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/dogsandcats0123.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/dumplingthrway.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/familiasupertramp.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/ferdous12345.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/fingers714.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/foodietg.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/gamut2376.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/gifyouup.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/goughjustin.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/green-yoyo.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/guest7951120.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/gunsnrosesforever.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/hammerfan12.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/heyrainyday.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/hopelessbrokensoul.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/hummingbird423.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/iki4life.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/jaymon79.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/jcvibes.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/jimijobob.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/jjbeanface.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/joubertlawoffice.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/jr_cameron.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/kabanaa.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/khajiitthowaway.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/laylathealpaca.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/libertygrace323.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/lisaberlinx.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/lucylululemon.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/madeinapinch.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/madrugada17.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/mariadelmar_00.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/marie-mariahh.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/marimato.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/mbudwomen2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/mckaythomas10.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/meghanfalls.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/meptep.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/mikey_7869.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/mishtersmiley.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/mj6578.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/momyoucantzoomin.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/mushroompizza1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/nuevoarmoredsaint.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/nzurimalkia3.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/pastel_abomination.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/patssister1960.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/polmanxd.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/rebelcka.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/reneejoiner.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/robertc79.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/roman_ingram_.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/sacto_verita.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/sapphireshaze.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/sarahinthesky048.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/shadoweon.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/sillybilly97.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/smilerlollie.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/stepmomnomore.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/superbhuboutreach.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/tbgxspirit.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/techsavvynerd91.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/theMNG.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/tra123456.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/ucdfamilyresearch.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/uhohhnope.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/waheifilmguy.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/wanderingtrance.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/woohoo-77.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/xAC3777x.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/x_Omni.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/xalvx.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/reddit_data_family/yourfaceherenow.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data_Collector/Pre-processor.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Thesis.iml" afterPath="$PROJECT_DIR$/.idea/Thesis.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Collector/results_mixed_chars" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/inusea.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/inusea.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Collector/Log_Reg_Classifier.py" afterPath="$PROJECT_DIR$/Data_Collector/Log_Reg_Classifier.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Collector/results_blogs" afterPath="$PROJECT_DIR$/Data_Collector/results_blogs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Collector/results_mixed" afterPath="$PROJECT_DIR$/Data_Collector/results_mixed" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Collector/results_reddit" afterPath="$PROJECT_DIR$/Data_Collector/results_reddit" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -180,9 +19,9 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Thesis$Task2.coverage" NAME="Task2 Coverage Results" MODIFIED="1520105528976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../Advent/Day1" />
-    <SUITE FILE_PATH="coverage/Thesis$Log_Reg_Classifier.coverage" NAME="Log_Reg_Classifier Coverage Results" MODIFIED="1520407355277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data_Collector" />
+    <SUITE FILE_PATH="coverage/Thesis$Log_Reg_Classifier.coverage" NAME="Log_Reg_Classifier Coverage Results" MODIFIED="1524161236627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data_Collector" />
     <SUITE FILE_PATH="coverage/Thesis$Pre_processor.coverage" NAME="Pre-processor Coverage Results" MODIFIED="1519161268317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data_Collector" />
-    <SUITE FILE_PATH="coverage/Thesis$Reddit_Collector.coverage" NAME="Reddit_Collector Coverage Results" MODIFIED="1520407274256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data_Collector" />
+    <SUITE FILE_PATH="coverage/Thesis$Reddit_Collector.coverage" NAME="Reddit_Collector Coverage Results" MODIFIED="1522398878089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data_Collector" />
     <SUITE FILE_PATH="coverage/Thesis$Task1.coverage" NAME="Task1 Coverage Results" MODIFIED="1520105521313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../Advent/Day1" />
   </component>
   <component name="FileEditorManager">
@@ -191,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
+              <first_editor relative-caret-position="165">
                 <caret line="11" column="61" lean-forward="false" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
                 <folding />
               </first_editor>
@@ -200,26 +39,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Reddit_Collector.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data_Collector/Reddit_Collector.py">
+      <file leaf-file-name="Log_Reg_Classifier.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data_Collector/Log_Reg_Classifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="43" column="60" lean-forward="true" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
+            <state relative-caret-position="-4119">
+              <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Log_Reg_Classifier.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Data_Collector/Log_Reg_Classifier.py">
+      <file leaf-file-name="results_mixed_chars" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Data_Collector/results_mixed_chars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="134" column="41" lean-forward="true" selection-start-line="134" selection-start-column="41" selection-end-line="134" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="300">
+              <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="results_reddit" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data_Collector/results_reddit">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="results_blogs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data_Collector/results_blogs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="results_mixed" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data_Collector/results_mixed">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -241,7 +108,6 @@
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Data_Collector/reddit_data/Pre-processor.py" />
-        <option value="$PROJECT_DIR$/Data_Collector/Reddit_Collector.py" />
         <option value="$PROJECT_DIR$/Data_Collector/reddit_data/01Syd.txt" />
         <option value="$PROJECT_DIR$/../../../Advent/Day1/puzzle_input" />
         <option value="$PROJECT_DIR$/../../../Advent/Day1/Task2.py" />
@@ -249,7 +115,12 @@
         <option value="$PROJECT_DIR$/../../../Advent/Fun-Problems/README.md" />
         <option value="$PROJECT_DIR$/../../../Fun-Problems/README.md" />
         <option value="$PROJECT_DIR$/Data_Collector/Pre-processor.py" />
+        <option value="$PROJECT_DIR$/Data_Collector/Reddit_Collector.py" />
         <option value="$PROJECT_DIR$/Data_Collector/Log_Reg_Classifier.py" />
+        <option value="$PROJECT_DIR$/Data_Collector/results_reddit" />
+        <option value="$PROJECT_DIR$/Data_Collector/results_blogs" />
+        <option value="$PROJECT_DIR$/Data_Collector/results_mixed" />
+        <option value="$PROJECT_DIR$/Data_Collector/results_mixed_chars" />
       </list>
     </option>
   </component>
@@ -281,7 +152,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -298,6 +168,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -368,7 +239,7 @@
       <module name="Thesis" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data_Collector/Reddit_Collector.py" />
-      <option name="PARAMETERS" value="https://www.reddit.com/r/friendship/.json?count=100&amp;limit=100&quot;" />
+      <option name="PARAMETERS" value="https://www.reddit.com/r/family/.json?count=100&amp;limit=100&quot;" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
@@ -457,22 +328,51 @@
       <option name="project" value="LOCAL" />
       <updated>1520408371990</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixed stratified k-fold cross validation">
+      <created>1520960633294</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1520960633294</updated>
+    </task>
+    <task id="LOCAL-00005" summary="included precision, recall, f-score inspection">
+      <created>1521026594381</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1521026594381</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Tested on different data sets">
+      <created>1522400777753</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1522400777753</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="20" width="1368" height="742" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24450952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28391168" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2673716" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4939577" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30278233" sideWeight="0.5060423" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.4939577" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4939577" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -482,7 +382,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -496,7 +396,10 @@
     <MESSAGE value="Collected data from reddit" />
     <MESSAGE value="Added logistic regression classifier" />
     <MESSAGE value="Added more depression data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more depression data" />
+    <MESSAGE value="fixed stratified k-fold cross validation" />
+    <MESSAGE value="included precision, recall, f-score inspection" />
+    <MESSAGE value="Tested on different data sets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tested on different data sets" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -515,61 +418,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Collector/Pre-processor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_data/01Syd.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Collector/Log_Reg_Classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="61" lean-forward="false" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Collector/Reddit_Collector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Collector/Pre-processor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_data/01Syd.txt">
+    <entry file="file://$PROJECT_DIR$/Data_Collector/Pre-processor.py" />
+    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_depression/01Syd.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
@@ -607,15 +457,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Collector/Pre-processor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_data/01Syd.txt">
+    <entry file="file://$PROJECT_DIR$/Data_Collector/Pre-processor.py" />
+    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_depression/01Syd.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
@@ -632,14 +475,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Collector/Pre-processor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="16" lean-forward="false" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_Collector/Pre-processor.py" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -692,14 +528,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Collector/Pre-processor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_Collector/Pre-processor.py" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -721,14 +550,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Collector/Pre-processor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_Collector/Pre-processor.py" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -761,14 +583,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Collector/Pre-processor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_Collector/Pre-processor.py" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -811,7 +626,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_data/Miso_J.txt">
+    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_depression/Miso_J.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -819,56 +634,56 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_data/Pre-processor.py" />
-    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_data/69ossoroniv.txt">
+    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_depression/69ossoroniv.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_data_family/[deleted].txt">
+    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_non_depression/[deleted].txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_data_family/-wowalker.txt">
+    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_non_depression/-wowalker.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_data/Rakersai.txt">
+    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_depression/Rakersai.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_data/OniGodcomplex.txt">
+    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_depression/OniGodcomplex.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_data/popqazguy.txt">
+    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_depression/popqazguy.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_data/2Pacula_Was_Taken.txt">
+    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_depression/2Pacula_Was_Taken.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_data/01Syd.txt">
+    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_depression/01Syd.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
@@ -879,17 +694,6 @@
     <entry file="file://$PROJECT_DIR$/../../../Advent/Day1/puzzle_input" />
     <entry file="file://$PROJECT_DIR$/../../../Advent/Day1/Task1" />
     <entry file="file://$PROJECT_DIR$/../../../Advent/Fun-Problems/README.md" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="11" column="61" lean-forward="false" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../Fun-Problems/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -900,31 +704,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Collector/Pre-processor.py">
+    <entry file="file://$PROJECT_DIR$/Data_Collector/Pre-processor.py" />
+    <entry file="file://$PROJECT_DIR$/Data_Collector/reddit_non_depression/1cognoscere.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-87">
-          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Data_Collector/Reddit_Collector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="43" column="60" lean-forward="true" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
+        <state relative-caret-position="765">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="61" lean-forward="false" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_Collector/results_reddit">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_Collector/results_blogs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_Collector/results_mixed">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Data_Collector/Log_Reg_Classifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="134" column="41" lean-forward="true" selection-start-line="134" selection-start-column="41" selection-end-line="134" selection-end-column="41" />
+        <state relative-caret-position="-4119">
+          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_Collector/results_mixed_chars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>

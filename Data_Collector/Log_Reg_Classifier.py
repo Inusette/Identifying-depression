@@ -1,10 +1,8 @@
 import os
-import re
 import numpy as np
 import random
 from bunch import Bunch
 
-from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 
@@ -16,11 +14,17 @@ from sklearn.metrics import precision_recall_fscore_support as prf_evaluator
 
 # the path to the data directories
 # DEP = "./reddit_depression"
-# FAM = "./reddit_non_depression"
+# NON_DEP = "./reddit_non_depression"
 # DEP = "./blogs_depression"
-# FAM = "./blogs_non_depression"
+# NON_DEP = "./blogs_non_depression"
 DEP = "./mixed_depression"
-FAM = "./mixed_non_depression"
+NON_DEP = "./mixed_non_depression"
+
+# analyzer parameter ('word' - for word tokens, 'char_wb' - for character tokens)
+ANALYZER = 'char_wb'
+
+# max features
+MAX_FEATS = 10000
 
 # Logistic Regression penalty
 PENALTY = "l1"
@@ -33,52 +37,80 @@ EVAL_AVERAGE = 'binary'
 
 
 def process_post(file_path):
+    """
+    Reads a file and extracts the raw text
+    :param file_path: the path to the file
+    :return: the processed string of raw text
+    """
 
     # open and read the file
     post = open(file_path, 'r')
 
-    # create a list for tokenized sentences
-    processed_post = []
+    text = ''
 
     # read the post line by line
     for line in post:
 
         if line.strip():  # check if the line isn't empty
-            # tokenize the line
-            words = process_sent(line)
-
-            # append the tokenized version to the list
-            processed_post.append(words)
-
-    text = ''
-
-    # iterate the post tokens list and build the string
-    for sent in processed_post:
-        for tok in sent:
-            text += tok + ' '
+            # decode the line and append to the text string
+            line = line.decode('latin-1').strip()
+            text += line + ' '
 
     return text
 
 
-def process_sent(sentence):
+def construct_data(dep_fnames, non_dep_fnames):
     """
-    Processes the given text and turns into lower case, removes numbers, separates punctuation from words
-    :param sentence: the raw sentence
-    :return: the list of sentence tokens
+    Constructs the data bunch that contains file names, file paths, raw file texts, and targets of files
+    :param dep_fnames: list of file names in depression directory
+    :param non_dep_fnames: list of file names in non-depression directory
+    :return: the constructed data bunch
     """
+    # instantiate the data bunch
+    data = Bunch()
 
-    sentence = sentence.decode('latin-1')
+    # join the 2 arrays of file names
+    file_names = np.concatenate((dep_fnames, non_dep_fnames))
 
-    # remove case
-    #sentence = sentence.lower()
+    # shuffle the data and add to the data bunch
+    random.shuffle(file_names)
 
-    # remove digits
-    #sentence = re.sub('\d', '', sentence)
+    # assign the shuffled file names array to data
+    data.filenames = file_names
 
-    # tokenize
-    tokens = word_tokenize(sentence)
+    # instantiate the lists for data attributes
+    data.filepath = []  # path to files
+    data.data = []  # raw texts
+    data.target = []  # target category index
 
-    return tokens
+    # iterate the file names
+    for index in range(len(file_names)):
+        fn = file_names[index]
+
+        # if the file belongs to depression cat
+        if file_names[index] in dep_fnames:
+
+            # append the corresponding index to the target attribute
+            data.target.append(0)
+
+            # find and append the path of the file to path attribute
+            data.filepath.append(os.path.join(DEP, fn))
+
+        # repeat for the other category
+        else:
+            data.target.append(1)
+            data.filepath.append(os.path.join(NON_DEP, fn))
+
+        # get the path of the current file
+        f_path = data.filepath[index]
+
+        # read the file and pre-process the text
+        post_text = process_post(f_path)
+
+        # append it to the data attribute
+        data.data.append(post_text)
+
+    return data
 
 
 def make_count_vectors(raw_data):
@@ -88,7 +120,7 @@ def make_count_vectors(raw_data):
     :return: the count vectors
     """
     # instantiate the vectorizer
-    vectorizer = CountVectorizer()
+    vectorizer = CountVectorizer(ngram_range=(1, 2), analyzer=ANALYZER, max_features=MAX_FEATS)
 
     # transform the data into vectors
     x_counts = vectorizer.fit_transform(raw_data)
@@ -105,7 +137,7 @@ def make_tfidf_vectors(raw_data):
     :return: the tf-idf vectors
     """
     # instantiate the vectorizer
-    vectorizer = TfidfVectorizer()
+    vectorizer = TfidfVectorizer(ngram_range=(1, 2), analyzer=ANALYZER, max_features=MAX_FEATS)
 
     # transform the data into vectors
     x_tfidf = vectorizer.fit_transform(raw_data)
@@ -158,7 +190,7 @@ def evaluate(model, x_test, y_test):
     return ev
 
 
-def classify(x, y):
+def classify_kfold(x, y):
     """
     Splits the data into K stratified folds and calculates the accuracy means of a logistic regression classifier
     :param x: vector data to split into train/test sets
@@ -209,69 +241,33 @@ def classify(x, y):
     return evaluation
 
 
+def classify_train_test(x_train, y_train, x_test, y_test):
+
+    # fit the data to the logistic regression model
+    lr_model = train_lr_model(x_train, y_train)
+
+    return evaluate(lr_model, x_test, y_test)
+
+
 # -------------------------------------------------------------------------------
 # Process the data
 # -------------------------------------------------------------------------------
 
 print "\nProcessing data"
 
-# instantiate the data bunch
-data = Bunch()
-
 # lists of file names in both directories
 dep_fnames = np.array(os.listdir(DEP))
-fam_fnames = np.array(os.listdir(FAM))
+non_dep_fnames = np.array(os.listdir(NON_DEP))
 
 print "number of depression files: ", len(dep_fnames)
-print "number of non-depression files: ", len(fam_fnames)
+print "number of non-depression files: ", len(non_dep_fnames)
 
-# join the 2 arrays of file names
-file_names = np.concatenate((dep_fnames, fam_fnames))
+# Construct the data
+data = construct_data(dep_fnames, non_dep_fnames)
 
-# shuffle the data and add to the data bunch
-random.shuffle(file_names)
-
-# assign the shuffled file names array to data
-data.filenames = file_names
-
-# instantiate the lists for data attributes
-data.filepath = []  # path to files
-data.data = []  # raw texts
-data.target = []  # target category index
-
-print "len filenames ", len(file_names)
-
-# iterate the file names
-for index in range(len(file_names)):
-    fn = file_names[index]
-
-    # if the file belongs to depression cat
-    if file_names[index] in dep_fnames:
-
-        # append the corresponding index to the target attribute
-        data.target.append(0)
-
-        # find and append the path of the file to path attribute
-        data.filepath.append(os.path.join(DEP, fn))
-
-    # repeat for the other category
-    else:
-        data.target.append(1)
-        data.filepath.append(os.path.join(FAM, fn))
-
-    # get the path of the current file
-    f_path = data.filepath[index]
-
-    # read the file and pre-process the text
-    post_text = process_post(f_path)
-
-    # append it to the data attribute
-    data.data.append(post_text)
-
-
-print "data length ", len(data.data)
-print "target 10", data.target[:10]
-print "target length", len(data.target)
+print "number of texts in data ", len(data.data)
+print "targets for the first 10 files: ", data.target[:10]
+print "number of targets of files in data", len(data.target)
 print data.data[:2]
 
 
@@ -294,7 +290,7 @@ labels = np.array(data.target)
 X_counts = make_count_vectors(data.data)
 
 # fit the data to the model and get the accuracy scores
-count_eval = classify(X_counts, labels)
+count_eval = classify_kfold(X_counts, labels)
 
 print "\ncross validation: ", count_eval.cv
 print "roc: ", count_eval.roc
@@ -313,7 +309,7 @@ print("\nTf-idf vectors: \n")
 X_tfidf = make_tfidf_vectors(data.data)
 
 # fit the data to the model and get the accuracy scores
-tfidf_eval = classify(X_tfidf, labels)
+tfidf_eval = classify_kfold(X_tfidf, labels)
 
 print "\ncross validation: ", tfidf_eval.cv
 print "roc: ", tfidf_eval.roc
