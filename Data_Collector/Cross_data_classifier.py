@@ -8,23 +8,17 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import roc_auc_score
-from sklearn.model_selection import StratifiedKFold
 from sklearn.metrics import precision_recall_fscore_support as prf_evaluator
 
 
 # the path to the data directories
-# DEP = "./reddit_depression"
-# NON_DEP = "./reddit_non_depression"
-# DEP = "./blogs_depression"
-# NON_DEP = "./blogs_non_depression"
-DEP = "./mixed_depression"
-NON_DEP = "./mixed_non_depression"
+DEP = "./reddit_depression"
+NON_DEP = "./reddit_non_depression"
+TEST_DEP = "./blogs_depression"
+TEST_NON_DEP = "./blogs_non_depression"
 
 # analyzer parameter ('word' - for word tokens, 'char_wb' - for character tokens)
 ANALYZER = "word"
-
-# The max for the n-gram range
-NGRAM_MAX = 3
 
 # Logistic Regression penalty
 PENALTY = "l1"
@@ -53,7 +47,7 @@ def process_post(file_path):
 
         if line.strip():  # check if the line isn't empty
             # decode the line and append to the text string
-            line = line.decode('unicode-escape').encode('utf-8').strip()
+            line = line.decode('latin-1').encode('utf8').strip()
             text += line + ' '
 
     return text
@@ -113,40 +107,6 @@ def construct_data(dep_fnames, non_dep_fnames, dep_dir, non_dep_dir):
     return data
 
 
-def make_count_vectors(raw_data):
-    """
-    transforms text data into count vectors
-    :param raw_data: data to transform
-    :return: the count vectors
-    """
-    # instantiate the vectorizer
-    vectorizer = CountVectorizer(ngram_range=(1, NGRAM_MAX), analyzer=ANALYZER, encoding='utf8')
-
-    # transform the data into vectors
-    x_counts = vectorizer.fit_transform(raw_data)
-
-    print "Count vectors shape: ", x_counts.shape
-
-    return x_counts
-
-
-def make_tfidf_vectors(raw_data):
-    """
-    transforms text data into tf-idf vectors
-    :param raw_data: data to transform
-    :return: the tf-idf vectors
-    """
-    # instantiate the vectorizer
-    vectorizer = TfidfVectorizer(ngram_range=(1, NGRAM_MAX), analyzer=ANALYZER, encoding='utf8')
-
-    # transform the data into vectors
-    x_tfidf = vectorizer.fit_transform(raw_data)
-
-    print "Tf-idf vectors shape: ", x_tfidf.shape
-
-    return x_tfidf
-
-
 def train_lr_model(x_train, y_train):
     """
     Creates a logistic regression model and fits the given data to it
@@ -190,55 +150,12 @@ def evaluate(model, x_test, y_test):
     return ev
 
 
-def classify_kfold(x, y):
-    """
-    Splits the data into K stratified folds and calculates the accuracy means of a logistic regression classifier
-    :param x: vector data to split into train/test sets
-    :param y: target labels of the data
-    :return: mean cross validation accuracy and roc accuracy
-    """
+def classify_train_test(x_train, y_train, x_test, y_test):
 
-    # Create the stratified fold splits model
-    skf = StratifiedKFold(n_splits=KFOLD_SPLITS, shuffle=True)
+    # fit the data to the logistic regression model
+    lr_model = train_lr_model(x_train, y_train)
 
-    # create the evaluation bunch and its attributes
-    evaluation = Bunch()
-    evaluation.precision = []
-    evaluation.recall = []
-    evaluation.fscore = []
-
-    cv_mean = []
-    roc_mean = []
-
-    # iterate all the indices the split() method returns
-    for indx, (train_indices, test_indices) in enumerate(skf.split(x, y)):
-        # print the running fold
-        print "Training on fold " + str(indx + 1) + "/10..."
-
-        # Generate batches from indices
-        x_train, x_test = x[train_indices], x[test_indices]
-        y_train, y_test = y[train_indices], y[test_indices]
-
-        # fit the data to the logistic regression model
-        lr_model = train_lr_model(x_train, y_train)
-
-        # evaluate the model
-        fold_ev = evaluate(lr_model, x_test, y_test)
-
-        # append all evaluation values to the mean lists and evaluation bunch
-        cv_mean.append(fold_ev.cv)
-        roc_mean.append(fold_ev.roc)
-
-        evaluation.precision.append(fold_ev.precision)
-        evaluation.recall.append(fold_ev.recall)
-        evaluation.fscore.append(fold_ev.fscore)
-
-    # calculate the mean for both accuracies and add to the evaluation
-    evaluation.cv = np.mean(cv_mean)
-    evaluation.roc = np.mean(roc_mean)
-
-    # return the evaluation bunch
-    return evaluation
+    return evaluate(lr_model, x_test, y_test)
 
 
 # -------------------------------------------------------------------------------
@@ -262,6 +179,24 @@ print "targets for the first 10 files: ", data.target[:10]
 print "number of targets of files in data", len(data.target)
 print "first 2 files: ", data.data[:2]
 
+# -------------------------------------------------------------------------------
+# do the same for the test data
+
+
+test_dep_fnames = np.array(os.listdir(TEST_DEP))
+test_non_dep_fnames = np.array(os.listdir(TEST_NON_DEP))
+
+print "number of test depression files: ", len(test_dep_fnames)
+print "number of test non-depression files: ", len(test_non_dep_fnames)
+
+# Construct the data
+test_data = construct_data(test_dep_fnames, test_non_dep_fnames, TEST_DEP, TEST_NON_DEP)
+
+print "number of texts in test data ", len(test_data.data)
+print "targets for the first 10 test files: ", test_data.target[:10]
+print "number of targets of files in test data", len(test_data.target)
+print "first two files", test_data.data[:2]
+
 
 # -------------------------------------------------------------------------------
 # Vectors and Model
@@ -274,22 +209,38 @@ print("\ncount vectors: \n")
 # create the target labels array
 labels = np.array(data.target)
 
+# create the target labels array for test data
+test_labels = np.array(test_data.target)
+
 # --------------------------------------------
 # Frequency count vectors
 # --------------------------------------------
 
-# transform raw data into count vectors
-X_counts = make_count_vectors(data.data)
+# instantiate the vectorizer
+vectorizer = CountVectorizer(ngram_range=(1, 2), analyzer=ANALYZER, encoding='utf8')
+
+# Learn a vocabulary dictionary of all tokens in the raw documents
+vectorizer.fit(data.data)
+
+# Transform documents to document-term matrix.
+X_counts = vectorizer.transform(data.data)
+
+# Using the vectorizer trained on training data, transform the test data
+test_X_counts = vectorizer.transform(test_data.data)
+
+print "Count vectors shape: ", X_counts.shape
+
+
+print "Test count vectors shape: ", test_X_counts.shape
 
 # fit the data to the model and get the accuracy scores
-count_eval = classify_kfold(X_counts, labels)
-
+count_eval = classify_train_test(X_counts, labels, test_X_counts, test_labels)
 
 print "\ncross validation: ", count_eval.cv
 print "roc: ", count_eval.roc
-print "precision for the first 10: ", count_eval.precision[:10]
-print "recall for the first 10: ", count_eval.recall[:10]
-print "f-score for the first 10: ", count_eval.fscore[:10]
+print "precision for the first 10: ", count_eval.precision
+print "recall for the first 10: ", count_eval.recall
+print "fscore for the first 10: ", count_eval.fscore
 
 
 # ---------------------------------------------
@@ -298,14 +249,26 @@ print "f-score for the first 10: ", count_eval.fscore[:10]
 
 print("\nTf-idf vectors: \n")
 
-# transform raw data into tf-idf vectors
-X_tfidf = make_tfidf_vectors(data.data)
+# instantiate the vectorizer
+tf_vectorizer = TfidfVectorizer(ngram_range=(1, 2), analyzer=ANALYZER, encoding='utf8')
+
+# Learn a vocabulary dictionary of all tokens in the raw documents
+tf_vectorizer.fit(data.data)
+
+# Transform documents to document-term matrix.
+X_tfidf = tf_vectorizer.transform(data.data)
+
+# Using the vectorizer trained on training data, transform the test data
+test_X_tfidf = tf_vectorizer.transform(test_data.data)
+
+print "Tfidf vectors shape: ", X_tfidf.shape
+print "Test Tfidf vectors shape: ", test_X_tfidf.shape
 
 # fit the data to the model and get the accuracy scores
-tfidf_eval = classify_kfold(X_tfidf, labels)
+tfidf_eval = classify_train_test(X_tfidf, labels, test_X_tfidf, test_labels)
 
 print "\ncross validation: ", tfidf_eval.cv
 print "roc: ", tfidf_eval.roc
-print "precision for the first 10: ", tfidf_eval.precision[:10]
-print "recall for the first 10: ", tfidf_eval.recall[:10]
-print "f-score for the first 10: ", tfidf_eval.fscore[:10]
+print "precision for the first 10: ", tfidf_eval.precision
+print "recall for the first 10: ", tfidf_eval.recall
+print "fscore for the first 10: ", tfidf_eval.fscore
