@@ -1,0 +1,14 @@
+Keep up to date with the latest research on breast cancer
+Hi reddit,
+
+I recently built a website that will post the best new research articles to help you keep up with the latest in breast cancer treatments, diagnosis, outcomes, trials, etc. I thought you might it useful.
+
+For example, research shows that melatonin might inhibit breast cancer cell growth: https://www.ncbi.nlm.nih.gov/pubmed/27017208
+
+You can follow the latest research here: https://wecured.com/condition/breast-cancer
+
+Hit the "Follow" button to get them emailed to you on a weekly basis.
+
+I hope you'll discover something that can help you.
+
+Mods: I make no money from the website and the website does not sell/endorse any product. You can't give me money even if you want to. I do this out of my own free time as a Silicon Valley software engineer.

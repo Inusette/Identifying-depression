@@ -1,0 +1,25 @@
+Question about Breast Cancer Staging
+TLDR: What stage is a TNM of pT2(m)pN1(sn) with a multifocal IDC size of 2.2CM and 1.1CM Grade 2 with DCIS of 3.3CM Grade 3 and two lymph nodes involved?
+
+-------------
+
+My Mom had a lumpectomy about two weeks ago for breast cancer and recently received the final biopsy and staging results.
+
+The paper the surgeon gave her states that the TMN is pT2(m)pN1(sn), and I am extremely confused as too what the actual number stage of the cancer is. Since when looking online gives different results for what these numbers mean.
+
+To give a little more information:
+The tumor was mutlifocal IDC with one area being 2.2CM(Grade 2) and the other one was 1.1CM. With a large area of DCIS(3.3CM, Grade 3) in-between the tumors themselves.
+
+One lymph node had been heavily spread to (1.3CM) and the second had only a small amount of cancer cells (0.1CM). The third lymph node did not have any cancer cells.
+
+She is triple positive for ER/PR and HER2.
+
+I am confused on the actual staging because for instance, [looking on the Susan G. Komen table](https://ww5.komen.org/BreastCancer/StagingofBreastCancer.html), in the T2N1 area checking both G2 and G3 (because I am not really sure which one I should be following) and the triple positive areas; the table shows stage 1B. The most interesting thing I have found when researching staging is the second example on [this site](https://www.cancer.org/cancer/breast-cancer/understanding-a-breast-cancer-diagnosis/stages-of-breast-cancer.html) says that cancer that is a larger size and with more lymph nodes then what my mom biopsy showed is still 1B.
+
+But like [this one](https://cancerstaging.org/references-tools/quickreferences/Documents/BreastMedium.pdf) and other places says the staging is stage 2B.
+
+My Dad asked what the stage was, but I think he kind of asked a leading question that because lymph nodes were involved that made it Stage 2 and I am sure that the surgeon see a lot of people (not to how many did the surgeon see before my mom's appointment) and could have possibly gotten confused about things.
+
+Has anyone else know someone with a similar diagnosis and can let me know what the stage is? I would like to know because I know the treatment between stage 1 and 2 is very different and I would hate to see my mom go through treatment that wasn't necessary.
+
+Thank you for reading!
